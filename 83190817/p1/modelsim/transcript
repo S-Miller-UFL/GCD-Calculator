@@ -1,0 +1,1765 @@
+# Compile of ctrl1.vhd was successful.
+# Compile of datapath1.vhd was successful.
+# Compile of gcd.vhd was successful.
+# Compile of generic2x1mux.vhd was successful.
+# Compile of genericcomparator.vhd was successful.
+# Compile of genericregister.vhd was successful.
+# Compile of genericsubtractor.vhd was successful.
+# Compile of gcd_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.gcd_tb
+# vsim -gui work.gcd_tb 
+# Start time: 20:32:49 on Oct 13,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.gcd_tb(tb)
+# ** Error: (vsim-3170) Could not find 'gcd(fsmd)'.
+#         Searched libraries:
+#             C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/modelsim/work
+# Error loading design
+# End time: 20:32:49 on Oct 13,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+# Compile of ctrl1.vhd was successful.
+# Compile of datapath1.vhd was successful.
+# Compile of gcd.vhd was successful.
+# Compile of generic2x1mux.vhd was successful.
+# Compile of genericcomparator.vhd was successful.
+# Compile of genericregister.vhd was successful.
+# Compile of genericsubtractor.vhd was successful.
+# Compile of gcd_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.gcd_tb
+# vsim -gui work.gcd_tb 
+# Start time: 20:33:38 on Oct 13,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.gcd_tb(tb)
+# Loading work.gcd(fsm_d1)
+# Loading work.ctrl1(arch)
+# Loading work.datapath1(arch)
+# ** Fatal: (vsim-3348) Port length (16) does not match actual length (8) for port "/gcd_tb/UUT/datapath/x".
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:33:39 on Oct 13,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of ctrl1.vhd was successful.
+# Compile of datapath1.vhd was successful.
+# Compile of gcd.vhd was successful.
+# Compile of generic2x1mux.vhd was successful.
+# Compile of genericcomparator.vhd was successful.
+# Compile of genericregister.vhd was successful.
+# Compile of genericsubtractor.vhd was successful.
+# Compile of gcd_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.gcd_tb
+# vsim -gui work.gcd_tb 
+# Start time: 20:39:55 on Oct 13,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.gcd_tb(tb)
+# Loading work.gcd(fsm_d1)
+# Loading work.ctrl1(arch)
+# Loading work.datapath1(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.generic2x1mux(arch)
+# Loading work.genericregister(arch)
+# Loading work.genericsubtractor(arch)
+# Loading work.genericcomparator(arch)
+add wave -position end  sim:/gcd_tb/clkEn
+add wave -position end  sim:/gcd_tb/clk
+add wave -position end  sim:/gcd_tb/rst
+add wave -position end  sim:/gcd_tb/go
+add wave -position end  sim:/gcd_tb/done
+add wave -position end  sim:/gcd_tb/x
+add wave -position end  sim:/gcd_tb/y
+add wave -position end  sim:/gcd_tb/output
+add wave -position end  sim:/gcd_tb/WIDTH
+add wave -position end  sim:/gcd_tb/TIMEOUT
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/y_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/y_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/x_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/x_subtractor
+# ** Warning: Incorrect GCD
+#    Time: 540 ns  Iteration: 2  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 1000580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 2000620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 3000660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 4000700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 5000740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 6000780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 7000820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 8000860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 9000900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 10000940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 11000980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 12001020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 13001060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 14001100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 15001140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 16001180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 17001220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 18001260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 19001300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 20001340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 21001380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 22001420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 23001460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 24001500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 25001540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 26001580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 27001620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 28001660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 29001700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 30001740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 31001780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 32001820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 33001860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 34001900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 35001940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 36001980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 37002020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 38002060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 39002100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 40002140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 41002180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 42002220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 43002260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 44002300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 45002340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 46002380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 47002420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 48002460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 49002500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 50002540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 51002580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 52002620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 53002660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 54002700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 55002740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 56002780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 57002820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 58002860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 59002900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 60002940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 61002980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 62003020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 63003060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 64003100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 65003140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 66003180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 67003220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 68003260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 69003300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 70003340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 71003380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 72003420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 73003460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 74003500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 75003540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 76003580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 77003620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 78003660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 79003700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 80003740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 81003780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 82003820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 83003860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 84003900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 85003940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 86003980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 87004020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 88004060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 89004100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 90004140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 91004180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 92004220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 93004260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 94004300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 95004340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 96004380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 97004420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 98004460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 99004500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 100004540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 101004580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 102004620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 103004660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 104004700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 105004740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 106004780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 107004820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 108004860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 109004900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 110004940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 111004980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 112005020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 113005060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 114005100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 115005140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 116005180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 117005220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 118005260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 119005300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 120005340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 121005380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 122005420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 123005460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 124005500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 125005540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 126005580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 127005620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 128005660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 129005700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 130005740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 131005780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 132005820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 133005860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 134005900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 135005940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 136005980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 137006020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 138006060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 139006100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 140006140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 141006180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 142006220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 143006260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 144006300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 145006340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 146006380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 147006420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 148006460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 149006500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 150006540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 151006580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 152006620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 153006660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 154006700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 155006740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 156006780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 157006820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 158006860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 159006900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 160006940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 161006980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 162007020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 163007060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 164007100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 165007140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 166007180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 167007220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 168007260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 169007300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 170007340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 171007380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 172007420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 173007460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 174007500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 175007540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 176007580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 177007620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 178007660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 179007700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 180007740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 181007780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 182007820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 183007860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 184007900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 185007940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 186007980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 187008020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 188008060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 189008100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 190008140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 191008180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 192008220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 193008260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 194008300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 195008340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 196008380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 197008420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 198008460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 199008500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 200008540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 201008580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 202008620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 203008660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 204008700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 205008740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 206008780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 207008820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 208008860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 209008900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 210008940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 211008980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 212009020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 213009060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 214009100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 215009140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 216009180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 217009220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 218009260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 219009300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 220009340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 221009380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 222009420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 223009460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 224009500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 225009540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 226009580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 227009620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 228009660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 229009700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 230009740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 231009780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 232009820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 233009860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 234009900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 235009940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 236009980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 237010020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 238010060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 239010100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 240010140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 241010180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 242010220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 243010260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 244010300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 245010340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 246010380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 247010420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 248010460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 249010500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 250010540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 251010580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 252010620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 253010660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 254010700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 255010740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 256010780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 256010780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 257010820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 258010860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 258010860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 259010900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 260010940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 260010940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 261010980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 262011020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 262011020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 263011060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 264011100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 264011100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 265011140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 266011180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 266011180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 267011220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 268011260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 268011260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 269011300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 270011340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 270011340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 271011380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 272011420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 272011420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 273011460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 274011500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 274011500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 275011540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 276011580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 276011580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 277011620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 278011660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 278011660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 279011700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 280011740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 280011740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 281011780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 282011820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 282011820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 283011860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 284011900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 284011900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 285011940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 286011980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 286011980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 287012020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 288012060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 288012060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 289012100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 290012140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 290012140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 291012180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 292012220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 292012220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 293012260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 294012300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 294012300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 295012340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 296012380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 296012380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 297012420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 298012460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 298012460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 299012500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 300012540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 300012540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 301012580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 302012620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 302012620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 303012660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 304012700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 304012700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 305012740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 306012780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 306012780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 307012820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 308012860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 308012860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 309012900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 310012940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 310012940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 311012980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 312013020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 312013020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 313013060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 314013100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 314013100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 315013140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 316013180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 316013180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 317013220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 318013260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 318013260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 319013300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 320013340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 320013340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 321013380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 322013420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 322013420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 323013460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 324013500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 324013500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 325013540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 326013580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 326013580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 327013620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 328013660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 328013660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 329013700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 330013740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 330013740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 331013780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 332013820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 332013820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 333013860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 334013900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 334013900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 335013940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 336013980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 336013980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 337014020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 338014060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 338014060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 339014100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 340014140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 340014140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 341014180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 342014220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 342014220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 343014260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 344014300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 344014300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 345014340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 346014380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 346014380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 347014420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 348014460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 348014460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 349014500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 350014540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 350014540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 351014580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 352014620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 352014620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 353014660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 354014700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 354014700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 355014740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 356014780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 356014780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 357014820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 358014860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 358014860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 359014900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 360014940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 360014940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 361014980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 362015020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 362015020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 363015060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 364015100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 364015100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 365015140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 366015180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 366015180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 367015220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 368015260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 368015260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 369015300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 370015340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 370015340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 371015380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 372015420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 372015420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 373015460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 374015500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 374015500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 375015540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 376015580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 376015580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 377015620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 378015660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 378015660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 379015700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 380015740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 380015740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 381015780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 382015820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 382015820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 383015860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 384015900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 384015900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 385015940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 386015980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 386015980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 387016020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 388016060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 388016060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 389016100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 390016140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 390016140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 391016180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 392016220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 392016220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 393016260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 394016300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 394016300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 395016340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 396016380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 396016380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 397016420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 398016460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 398016460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 399016500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 400016540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 400016540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 401016580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 402016620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 402016620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 403016660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 404016700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 404016700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 405016740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 406016780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 406016780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 407016820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 408016860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 408016860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 409016900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 410016940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 410016940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 411016980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 412017020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 412017020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 413017060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 414017100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 414017100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 415017140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 416017180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 416017180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 417017220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 418017260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 418017260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 419017300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 420017340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 420017340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 421017380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 422017420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 422017420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 423017460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 424017500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 424017500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 425017540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 426017580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 426017580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 427017620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 428017660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 428017660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 429017700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 430017740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 430017740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 431017780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 432017820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 432017820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 433017860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 434017900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 434017900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 435017940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 436017980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 436017980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 437018020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 438018060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 438018060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 439018100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 440018140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 440018140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 441018180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 442018220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 442018220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 443018260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 444018300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 444018300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 445018340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 446018380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 446018380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 447018420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 448018460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 448018460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 449018500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 450018540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 450018540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 451018580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 452018620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 452018620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 453018660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 454018700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 454018700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 455018740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 456018780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 456018780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 457018820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 458018860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 458018860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 459018900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 460018940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 460018940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 461018980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 462019020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 462019020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 463019060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 464019100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 464019100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 465019140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 466019180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 466019180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 467019220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 468019260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 468019260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 469019300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 470019340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 470019340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 471019380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 472019420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 472019420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 473019460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 474019500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 474019500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 475019540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 476019580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 476019580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 477019620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 478019660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 478019660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 479019700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 480019740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 480019740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 481019780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 482019820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 482019820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 483019860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 484019900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 484019900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 485019940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 486019980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 486019980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 487020020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 488020060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 488020060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 489020100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 490020140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 490020140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 491020180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 492020220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 492020220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 493020260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 494020300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 494020300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 495020340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 496020380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 496020380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 497020420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 498020460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 498020460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 499020500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 500020540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 500020540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 501020580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 502020620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 502020620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 503020660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 504020700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 504020700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 505020740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 506020780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 506020780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 507020820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 508020860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 508020860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 509020900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 510020940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 511020980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 512021020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 512021020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 513021060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 514021100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 515021140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 515021140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 516021180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 517021220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 518021260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 518021260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 519021300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 520021340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 521021380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 521021380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 522021420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 523021460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 524021500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 524021500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 525021540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 526021580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 527021620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 527021620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 528021660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 529021700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 530021740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 530021740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 531021780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 532021820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 533021860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 533021860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 534021900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 535021940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 536021980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 536021980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 537022020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 538022060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 539022100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 539022100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 540022140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 541022180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 542022220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 542022220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 543022260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 544022300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 545022340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 545022340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 546022380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 547022420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 548022460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 548022460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 549022500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 550022540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 551022580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 551022580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 552022620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 553022660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 554022700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 554022700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 555022740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 556022780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 557022820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 557022820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 558022860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 559022900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 560022940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 560022940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 561022980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 562023020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 563023060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 563023060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 564023100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 565023140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 566023180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 566023180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 567023220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 568023260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 569023300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 569023300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 570023340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 571023380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 572023420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 572023420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 573023460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 574023500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 575023540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 575023540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 576023580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 577023620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 578023660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 578023660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 579023700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 580023740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 581023780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 581023780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 582023820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 583023860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 584023900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 584023900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 585023940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 586023980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 587024020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 587024020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 588024060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 589024100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 590024140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 590024140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 591024180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 592024220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 593024260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 593024260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 594024300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 595024340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 596024380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 596024380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 597024420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 598024460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 599024500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 599024500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 600024540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 601024580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 602024620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 602024620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 603024660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 604024700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 605024740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 605024740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 606024780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 607024820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 608024860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 608024860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 609024900 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 610024940 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 611024980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 611024980 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 612025020 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 613025060 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 614025100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 614025100 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 615025140 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 616025180 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 617025220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 617025220 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 618025260 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 619025300 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 620025340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 620025340 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 621025380 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 622025420 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 623025460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 623025460 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 624025500 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 625025540 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 626025580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 626025580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 627025620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 628025660 ns  Iteration: 0  Instance: /gcd_tb
+# Compile of ctrl1.vhd was successful.
+# Compile of datapath1.vhd was successful.
+# Compile of gcd.vhd was successful.
+# Compile of generic2x1mux.vhd was successful.
+# Compile of genericcomparator.vhd was successful.
+# Compile of genericregister.vhd was successful.
+# Compile of genericsubtractor.vhd was successful.
+# Compile of gcd_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.gcd_tb(tb)
+# Loading work.gcd(fsm_d1)
+# Loading work.ctrl1(arch)
+# Loading work.datapath1(arch)
+# Loading work.generic2x1mux(arch)
+# Loading work.genericregister(arch)
+# Loading work.genericsubtractor(arch)
+# Loading work.genericcomparator(arch)
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/comparator
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/y_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/y_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/x_subtractor
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /gcd_tb/UUT/datapath/x_subtractor
+# ** Warning: Incorrect GCD
+#    Time: 540 ns  Iteration: 2  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 1000580 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 2000620 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 3000660 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 4000700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 4000700 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 5000740 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 6000780 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 7000820 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Done never asserted.
+#    Time: 8000860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Warning: Incorrect GCD
+#    Time: 8000860 ns  Iteration: 0  Instance: /gcd_tb
+# ** Note: DONE!!!!!!
+#    Time: 8000900 ns  Iteration: 0  Instance: /gcd_tb
+# End time: 20:45:00 on Oct 13,2023, Elapsed time: 0:05:05
+# Errors: 0, Warnings: 22

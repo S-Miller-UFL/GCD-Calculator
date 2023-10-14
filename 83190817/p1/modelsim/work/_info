@@ -1,0 +1,360 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/steve/git_repos/school/EEL4712/lab4/83190817/p2/modelsim
+Ectrl1
+Z0 w1697241400
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 24
+Z3 dC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/modelsim
+Z4 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd
+Z5 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd
+l0
+L6 1
+Vj`IdjlXeccdMXC[HN]U<23
+!s100 oPBSEcL3kDh[jmR^Za]5X0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1697244094
+!i10b 1
+Z8 !s108 1697244094.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd|
+Z10 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R1
+R2
+DEx4 work 5 ctrl1 0 22 j`IdjlXeccdMXC[HN]U<23
+!i122 24
+l20
+L15 97
+VD_OBC>Ve;V@:FYd?DhM0@1
+!s100 X7Jjbj;kcIgm_G7a]7=Wj0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edatapath1
+Z13 w1697243894
+R1
+R2
+!i122 25
+R3
+Z14 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd
+Z15 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd
+l0
+L6 1
+V<QS:KIS3RQDof5g2lEIE^3
+!s100 glV2P4?d]NP>:A9cC;=222
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd|
+Z17 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 9 datapath1 0 22 <QS:KIS3RQDof5g2lEIE^3
+!i122 25
+l72
+L21 65
+V=?SAfN6Wjh6KKO]kZ`3ZP0
+!s100 YR;zY69XC_<M<EV98@AQ73
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Egcd
+Z18 w1697243810
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 26
+R3
+Z20 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd
+Z21 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd
+l0
+L7 1
+VbB_d174`@h6BVjW]KJT<X0
+!s100 WKz8Gmd6Z4km3R7G?=9A?3
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd|
+Z23 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd|
+!i113 1
+R11
+R12
+Afsm_d1
+R19
+R1
+R2
+Z24 DEx4 work 3 gcd 0 22 bB_d174`@h6BVjW]KJT<X0
+!i122 26
+l49
+L21 47
+VJ<GhJgn[0BF1PedBdHG[52
+!s100 KPnMi4Vj??T]bLF3OE@Qe0
+R6
+32
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Egcd_tb
+Z25 w1697244091
+R19
+R1
+R2
+!i122 31
+R3
+Z26 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd
+Z27 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd
+l0
+L5 1
+V?`3VzR3DdPa6QGR;I[Q>B0
+!s100 PVI?=LYIXmK9N80ONB]dL1
+R6
+32
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd|
+Z29 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+R24
+R19
+R1
+R2
+Z30 DEx4 work 6 gcd_tb 0 22 ?`3VzR3DdPa6QGR;I[Q>B0
+!i122 31
+l22
+Z31 L8 91
+Vf_?KzEje9Y9Q1XUAoA7jl1
+!s100 KI29lZUB>UQIFNj1Q[KI62
+R6
+32
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Egeneric2x1mux
+Z32 w1697236686
+Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z34 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R1
+R2
+!i122 27
+R3
+Z35 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/generic2x1mux.vhd
+Z36 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/generic2x1mux.vhd
+l0
+L8 1
+VV^Jh1f8PR5F0PZ1T8DaNm3
+!s100 bV`nWX9OK^YT@FPk_mTiD1
+R6
+32
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/generic2x1mux.vhd|
+Z38 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/generic2x1mux.vhd|
+!i113 1
+R11
+R12
+Aarch
+R33
+R34
+R1
+R2
+DEx4 work 13 generic2x1mux 0 22 V^Jh1f8PR5F0PZ1T8DaNm3
+!i122 27
+l24
+L22 8
+VXV;T[5`=KQedz@KX6lL1W3
+!s100 CUfK``9aUATYX?aMzbSXz0
+R6
+32
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Egenericcomparator
+Z39 w1697236138
+R33
+R34
+R1
+R2
+!i122 28
+R3
+Z40 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericcomparator.vhd
+Z41 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericcomparator.vhd
+l0
+L8 1
+Vn<UjRUEz7<7IMJ1iJYPhY3
+!s100 UX8W>kGS_ECj4RQZ3VNVi1
+R6
+32
+R7
+!i10b 1
+R8
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericcomparator.vhd|
+Z43 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericcomparator.vhd|
+!i113 1
+R11
+R12
+Aarch
+R33
+R34
+R1
+R2
+DEx4 work 17 genericcomparator 0 22 n<UjRUEz7<7IMJ1iJYPhY3
+!i122 28
+l22
+L20 23
+VzU2Tzz8XAnlN?8gBUUI;Q2
+!s100 lbb0HNK^:XN@BdJVh5Dj<3
+R6
+32
+R7
+!i10b 1
+R8
+R42
+R43
+!i113 1
+R11
+R12
+Egenericregister
+Z44 w1697235158
+R34
+R33
+R1
+R2
+!i122 29
+R3
+Z45 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericregister.vhd
+Z46 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericregister.vhd
+l0
+L7 1
+V5PX:hD=[o6bDA_Cjia[8b1
+!s100 @KLAkV;U]5WWzTJK@CfC[1
+R6
+32
+R7
+!i10b 1
+R8
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericregister.vhd|
+Z48 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericregister.vhd|
+!i113 1
+R11
+R12
+Aarch
+R34
+R33
+R1
+R2
+DEx4 work 15 genericregister 0 22 5PX:hD=[o6bDA_Cjia[8b1
+!i122 29
+l26
+L22 33
+V^XbhNI]?fIEANE;DQI^g>3
+!s100 ;8kc0MdzJlH84o_;JI@E<1
+R6
+32
+R7
+!i10b 1
+R8
+R47
+R48
+!i113 1
+R11
+R12
+Egenericsubtractor
+Z49 w1697236246
+R33
+R34
+R1
+R2
+!i122 30
+R3
+Z50 8C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericsubtractor.vhd
+Z51 FC:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericsubtractor.vhd
+l0
+L8 1
+VH>7JSllX=_7[T9@PzfC1;0
+!s100 hGjVR1ZO[XXa:C=I?4io_1
+R6
+32
+R7
+!i10b 1
+R8
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericsubtractor.vhd|
+Z53 !s107 C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/genericsubtractor.vhd|
+!i113 1
+R11
+R12
+Aarch
+R33
+R34
+R1
+R2
+DEx4 work 17 genericsubtractor 0 22 H>7JSllX=_7[T9@PzfC1;0
+!i122 30
+l23
+L21 7
+Vgbz1Mb@dbQCC`[dEHd=PF2
+!s100 f_VNE^<M`gUa@M][Q0k;B1
+R6
+32
+R7
+!i10b 1
+R8
+R52
+R53
+!i113 1
+R11
+R12
