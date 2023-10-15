@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Oct 13 20:39:01 2023
+Analysis & Synthesis Status : Successful - Sun Oct 15 11:19:02 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : lab5_p1
-Top-level Entity Name : datapath1
+Top-level Entity Name : gcd
 Family : MAX 10
-Total logic elements : 41
-    Total combinational functions : 33
-    Dedicated logic registers : 24
-Total registers : 24
-Total pins : 33
+Total logic elements : 74
+    Total combinational functions : 66
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 28
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

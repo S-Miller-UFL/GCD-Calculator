@@ -14,61 +14,110 @@ end ctrl1;
 
 architecture arch of ctrl1 is
 
-type asmstatetype is (hold, load, compare,subyfromxputintox, subxfromyputintoy, done_state);
+type asmstatetype is (start,hold, load, compare,subyfromxputintox, subxfromyputintoy, done_state);
 signal state, nextstate: asmstatetype;
 
 begin
 
 --state transitions
 process(clk, reset)
+
 begin
+
 if(reset = '1') then
-	state <= hold;
+
+	state <= start;
+	
 elsif(clk'event and clk = '1') then
+
 	case state is
 	
+	when start =>
+		state <= hold;
+	
 	when hold =>
+	
 		if(go = '1') then
+		
 			state <= load;
+			
 		else
-			state <= state;
+		
+			state <= hold;
+			
 		end if;
+		
 	when load =>
+	
 		state <= compare;
+		
 	when compare =>
+	
 		if(x_ne_y = '1') then
+		
 			if(x_lt_y = '1') then
 			
 				state <= subxfromyputintoy;
+				
 			else
+			
 				state <= subyfromxputintox;
+				
 			end if;
+			
 		else
+		
 			state <= done_state;
+			
 		end if;
+		
 	when subxfromyputintoy =>
+	
 		state <= compare;
+		
 	when subyfromxputintox =>
+	
 		state <= compare;
+		
 	when done_state =>
-		state <= hold;
+	
+		if(go = '1') then
+		
+			state <= done_state;
+			
+		else
+		
+			state <= hold;
+			
+		end if;
 end case;
 	
 end if;
+
 end process;
 
 --outputs of states
 process(state)
+
 begin
 
 case state is
-	when hold =>
+
+	when start =>
 		x_sel <= 	'0';
 		y_sel <= 	'0';
 		y_en  <= 	'0';
 		x_en  <= 	'0';
 		output_en <='0';
 		done 		 <='0';
+		
+	when hold =>
+		x_sel <= 	'0';
+		y_sel <= 	'0';
+		y_en  <= 	'0';
+		x_en  <= 	'0';
+		output_en <='0';
+		--done 		 <= done;
 	when load =>
 		x_sel <= 	'0';
 		y_sel <= 	'0';
@@ -79,9 +128,9 @@ case state is
 	when compare =>
 		x_sel <= 	'0';
 		y_sel <= 	'0';
-		y_en  <= 	'1';
-		x_en  <= 	'1';
-		output_en <='0';
+		y_en  <= 	'0';
+		x_en  <= 	'0';
+		output_en <='1';
 		done 		 <='0';
 	when subxfromyputintoy =>
 		x_sel <= 	'0';
