@@ -1,9 +1,12 @@
 
 State Machine - |gcd|ctrl2:controller|state
-Name state.done_state state.subxfromyputintoy state.subyfromxputintox state.compare state.load state.hold 
-state.hold 0 0 0 0 0 0 
-state.load 0 0 0 0 1 1 
-state.compare 0 0 0 1 0 1 
-state.subyfromxputintox 0 0 1 0 0 1 
-state.subxfromyputintoy 0 1 0 0 0 1 
-state.done_state 1 0 0 0 0 1 
+Name state.buffer_state state.output state.done_state state.subxfromyputintoy state.subyfromxputintox state.compare state.load state.hold state.start 
+state.start 0 0 0 0 0 0 0 0 0 
+state.hold 0 0 0 0 0 0 0 1 1 
+state.load 0 0 0 0 0 0 1 0 1 
+state.compare 0 0 0 0 0 1 0 0 1 
+state.subyfromxputintox 0 0 0 0 1 0 0 0 1 
+state.subxfromyputintoy 0 0 0 1 0 0 0 0 1 
+state.done_state 0 0 1 0 0 0 0 0 1 
+state.output 0 1 0 0 0 0 0 0 1 
+state.buffer_state 1 0 0 0 0 0 0 0 1 

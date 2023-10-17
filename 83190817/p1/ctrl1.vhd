@@ -3,18 +3,18 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-entity ctrl1 is
+entity ctrl2 is
 port
 (
 	x_sel, y_sel, y_en, x_en, output_en, done: out std_logic;
 	x_lt_y,x_ne_y, clk, reset, go : in std_logic
 	
 );
-end ctrl1;
+end ctrl2;
 
-architecture arch of ctrl1 is
+architecture arch of ctrl2 is
 
-type asmstatetype is (start,hold, load, compare,subyfromxputintox, subxfromyputintoy, done_state);
+type asmstatetype is (start,hold, load, compare,subyfromxputintox, subxfromyputintoy, done_state,output, buffer_state);
 signal state, nextstate: asmstatetype;
 
 begin
@@ -66,8 +66,7 @@ elsif(clk'event and clk = '1') then
 			end if;
 			
 		else
-		
-			state <= done_state;
+			state <= output;
 			
 		end if;
 		
@@ -78,15 +77,17 @@ elsif(clk'event and clk = '1') then
 	when subyfromxputintox =>
 	
 		state <= compare;
-		
-	when done_state =>
 	
+	when output =>
+			state <= buffer_state;
+	when buffer_state =>
+			state <= done_state;
+	when done_state =>
 		if(go = '1') then
 		
 			state <= done_state;
 			
 		else
-		
 			state <= hold;
 			
 		end if;
@@ -117,7 +118,6 @@ case state is
 		y_en  <= 	'0';
 		x_en  <= 	'0';
 		output_en <='0';
-		--done 		 <= done;
 	when load =>
 		x_sel <= 	'0';
 		y_sel <= 	'0';
@@ -130,7 +130,7 @@ case state is
 		y_sel <= 	'0';
 		y_en  <= 	'0';
 		x_en  <= 	'0';
-		output_en <='1';
+		output_en <='0';
 		done 		 <='0';
 	when subxfromyputintoy =>
 		x_sel <= 	'0';
@@ -146,12 +146,27 @@ case state is
 		x_en  <= 	'1';
 		output_en <='0';
 		done 		 <='0';
-	when done_state =>
+	when output =>
 		x_sel <= 	'0';
 		y_sel <= 	'0';
 		y_en  <= 	'0';
 		x_en  <= 	'0';
 		output_en <='1';
+		done 		 <='0';
+		--to give time for register to catch up
+	when buffer_state =>
+		x_sel <= 	'0';
+		y_sel <= 	'0';
+		y_en  <= 	'0';
+		x_en  <= 	'0';
+		output_en <='0';
+		done 		 <='0';
+	when done_state =>
+		x_sel <= 	'0';
+		y_sel <= 	'0';
+		y_en  <= 	'0';
+		x_en  <= 	'0';
+		output_en <='0';
 		done 		 <='1';
 end case;
 

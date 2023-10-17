@@ -4,7 +4,7 @@ clk => datapath2:datapath.clk
 rst => ctrl2:controller.reset
 rst => datapath2:datapath.reset
 go => ctrl2:controller.go
-done <= ctrl2:controller.done
+done << ctrl2:controller.done
 x[0] => datapath2:datapath.x[0]
 x[1] => datapath2:datapath.x[1]
 x[2] => datapath2:datapath.x[2]
@@ -21,14 +21,14 @@ y[4] => datapath2:datapath.y[4]
 y[5] => datapath2:datapath.y[5]
 y[6] => datapath2:datapath.y[6]
 y[7] => datapath2:datapath.y[7]
-output[0] <= datapath2:datapath.output[0]
-output[1] <= datapath2:datapath.output[1]
-output[2] <= datapath2:datapath.output[2]
-output[3] <= datapath2:datapath.output[3]
-output[4] <= datapath2:datapath.output[4]
-output[5] <= datapath2:datapath.output[5]
-output[6] <= datapath2:datapath.output[6]
-output[7] <= datapath2:datapath.output[7]
+output[0] << datapath2:datapath.output[0]
+output[1] << datapath2:datapath.output[1]
+output[2] << datapath2:datapath.output[2]
+output[3] << datapath2:datapath.output[3]
+output[4] << datapath2:datapath.output[4]
+output[5] << datapath2:datapath.output[5]
+output[6] << datapath2:datapath.output[6]
+output[7] << datapath2:datapath.output[7]
 
 
 |gcd|ctrl2:controller
@@ -37,17 +37,18 @@ y_sel <= y_sel.DB_MAX_OUTPUT_PORT_TYPE
 y_en <= y_en.DB_MAX_OUTPUT_PORT_TYPE
 x_en <= x_en.DB_MAX_OUTPUT_PORT_TYPE
 output_en <= output_en.DB_MAX_OUTPUT_PORT_TYPE
-done <= done.DB_MAX_OUTPUT_PORT_TYPE
+done <= done$latch.DB_MAX_OUTPUT_PORT_TYPE
 x_lt_y => state.DATAB
 x_lt_y => state.DATAB
 x_ne_y => state.OUTPUTSELECT
 x_ne_y => state.OUTPUTSELECT
-x_ne_y => Selector1.IN1
-clk => state~2.DATAIN
-reset => state~4.DATAIN
+x_ne_y => state.DATAB
+clk => state~1.DATAIN
+reset => state~3.DATAIN
 go => state.DATAB
 go => Selector1.IN3
-go => Selector0.IN1
+go => Selector0.IN2
+go => Selector0.IN3
 
 
 |gcd|datapath2:datapath

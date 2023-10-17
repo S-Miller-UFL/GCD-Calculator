@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5_p2
-Sun Oct 15 11:41:44 2023
+Mon Oct 16 20:18:52 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,22 +14,23 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |gcd|ctrl2:controller|state
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |gcd
- 12. Parameter Settings for User Entity Instance: datapath2:datapath
- 13. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:x_mux
- 14. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:y_mux
- 15. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:mux1
- 16. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:mux2
- 17. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:x_register
- 18. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:y_register
- 19. Parameter Settings for User Entity Instance: datapath2:datapath|genericsubtractor:subtractor
- 20. Parameter Settings for User Entity Instance: datapath2:datapath|genericcomparator:comparator
- 21. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:outputreg
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |gcd
+ 13. Parameter Settings for User Entity Instance: datapath2:datapath
+ 14. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:x_mux
+ 15. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:y_mux
+ 16. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:mux1
+ 17. Parameter Settings for User Entity Instance: datapath2:datapath|generic2x1mux:mux2
+ 18. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:x_register
+ 19. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:y_register
+ 20. Parameter Settings for User Entity Instance: datapath2:datapath|genericsubtractor:subtractor
+ 21. Parameter Settings for User Entity Instance: datapath2:datapath|genericcomparator:comparator
+ 22. Parameter Settings for User Entity Instance: datapath2:datapath|genericregister:outputreg
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -56,15 +57,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 15 11:41:44 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 16 20:18:52 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab5_p2                                     ;
 ; Top-level Entity Name              ; gcd                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 74                                          ;
+; Total logic elements               ; 76                                          ;
 ;     Total combinational functions  ; 66                                          ;
-;     Dedicated logic registers      ; 30                                          ;
-; Total registers                    ; 30                                          ;
+;     Dedicated logic registers      ; 33                                          ;
+; Total registers                    ; 33                                          ;
 ; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -166,31 +167,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+--------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                        ; Library ;
-+--------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
-; gcd.vhd                                    ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd                              ;         ;
-; datapath2.vhd                              ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd                        ;         ;
-; ctrl2.vhd                                  ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/p2/ctrl2.vhd                            ;         ;
-; ../genericcomponents/genericsubtractor.vhd ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd ;         ;
-; ../genericcomponents/genericregister.vhd   ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericregister.vhd   ;         ;
-; ../genericcomponents/genericcomparator.vhd ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd ;         ;
-; ../genericcomponents/generic2x1mux.vhd     ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd     ;         ;
-+--------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                  ; Library ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; ../genericcomponents/genericsubtractor.vhd ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd ;         ;
+; ../genericcomponents/genericregister.vhd   ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd   ;         ;
+; ../genericcomponents/genericcomparator.vhd ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd ;         ;
+; ../genericcomponents/generic2x1mux.vhd     ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd     ;         ;
+; gcd.vhd                                    ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd                              ;         ;
+; datapath2.vhd                              ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd                        ;         ;
+; ctrl2.vhd                                  ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd                            ;         ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -198,20 +199,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 74        ;
+; Estimated Total logic elements              ; 76        ;
 ;                                             ;           ;
 ; Total combinational functions               ; 66        ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 1         ;
-;     -- 3 input functions                    ; 56        ;
-;     -- <=2 input functions                  ; 9         ;
+;     -- 3 input functions                    ; 58        ;
+;     -- <=2 input functions                  ; 7         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
 ;     -- normal mode                          ; 45        ;
 ;     -- arithmetic mode                      ; 21        ;
 ;                                             ;           ;
-; Total registers                             ; 30        ;
-;     -- Dedicated logic registers            ; 30        ;
+; Total registers                             ; 33        ;
+;     -- Dedicated logic registers            ; 33        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 28        ;
@@ -219,9 +220,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 30        ;
-; Total fan-out                               ; 341       ;
-; Average fan-out                             ; 2.24      ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 351       ;
+; Average fan-out                             ; 2.26      ;
 +---------------------------------------------+-----------+
 
 
@@ -230,8 +231,8 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                  ; Entity Name       ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+-------------------+--------------+
-; |gcd                                 ; 66 (0)              ; 30 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 28   ; 0            ; 0          ; |gcd                                                 ; gcd               ; work         ;
-;    |ctrl2:controller|                ; 10 (10)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |gcd|ctrl2:controller                                ; ctrl2             ; work         ;
+; |gcd                                 ; 66 (0)              ; 33 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 28   ; 0            ; 0          ; |gcd                                                 ; gcd               ; work         ;
+;    |ctrl2:controller|                ; 10 (10)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |gcd|ctrl2:controller                                ; ctrl2             ; work         ;
 ;    |datapath2:datapath|              ; 56 (0)              ; 24 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |gcd|datapath2:datapath                              ; datapath2         ; work         ;
 ;       |generic2x1mux:mux1|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |gcd|datapath2:datapath|generic2x1mux:mux1           ; generic2x1mux     ; work         ;
 ;       |generic2x1mux:mux2|           ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |gcd|datapath2:datapath|generic2x1mux:mux2           ; generic2x1mux     ; work         ;
@@ -247,18 +248,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |gcd|ctrl2:controller|state                                                                                              ;
-+-------------------------+------------------+-------------------------+-------------------------+---------------+------------+------------+
-; Name                    ; state.done_state ; state.subxfromyputintoy ; state.subyfromxputintox ; state.compare ; state.load ; state.hold ;
-+-------------------------+------------------+-------------------------+-------------------------+---------------+------------+------------+
-; state.hold              ; 0                ; 0                       ; 0                       ; 0             ; 0          ; 0          ;
-; state.load              ; 0                ; 0                       ; 0                       ; 0             ; 1          ; 1          ;
-; state.compare           ; 0                ; 0                       ; 0                       ; 1             ; 0          ; 1          ;
-; state.subyfromxputintox ; 0                ; 0                       ; 1                       ; 0             ; 0          ; 1          ;
-; state.subxfromyputintoy ; 0                ; 1                       ; 0                       ; 0             ; 0          ; 1          ;
-; state.done_state        ; 1                ; 0                       ; 0                       ; 0             ; 0          ; 1          ;
-+-------------------------+------------------+-------------------------+-------------------------+---------------+------------+------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |gcd|ctrl2:controller|state                                                                                                                                                ;
++-------------------------+--------------------+--------------+------------------+-------------------------+-------------------------+---------------+------------+------------+-------------+
+; Name                    ; state.buffer_state ; state.output ; state.done_state ; state.subxfromyputintoy ; state.subyfromxputintox ; state.compare ; state.load ; state.hold ; state.start ;
++-------------------------+--------------------+--------------+------------------+-------------------------+-------------------------+---------------+------------+------------+-------------+
+; state.start             ; 0                  ; 0            ; 0                ; 0                       ; 0                       ; 0             ; 0          ; 0          ; 0           ;
+; state.hold              ; 0                  ; 0            ; 0                ; 0                       ; 0                       ; 0             ; 0          ; 1          ; 1           ;
+; state.load              ; 0                  ; 0            ; 0                ; 0                       ; 0                       ; 0             ; 1          ; 0          ; 1           ;
+; state.compare           ; 0                  ; 0            ; 0                ; 0                       ; 0                       ; 1             ; 0          ; 0          ; 1           ;
+; state.subyfromxputintox ; 0                  ; 0            ; 0                ; 0                       ; 1                       ; 0             ; 0          ; 0          ; 1           ;
+; state.subxfromyputintoy ; 0                  ; 0            ; 0                ; 1                       ; 0                       ; 0             ; 0          ; 0          ; 1           ;
+; state.done_state        ; 0                  ; 0            ; 1                ; 0                       ; 0                       ; 0             ; 0          ; 0          ; 1           ;
+; state.output            ; 0                  ; 1            ; 0                ; 0                       ; 0                       ; 0             ; 0          ; 0          ; 1           ;
+; state.buffer_state      ; 1                  ; 0            ; 0                ; 0                       ; 0                       ; 0             ; 0          ; 0          ; 1           ;
++-------------------------+--------------------+--------------+------------------+-------------------------+-------------------------+---------------+------------+------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                       ;
++----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal         ; Free of Timing Hazards ;
++----------------------------------------------------+-----------------------------+------------------------+
+; ctrl2:controller|done                              ; ctrl2:controller|state.hold ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                             ;                        ;
++----------------------------------------------------+-----------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -266,10 +281,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 30    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 30    ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
@@ -401,19 +416,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 28                          ;
-; cycloneiii_ff         ; 30                          ;
-;     CLR               ; 6                           ;
+; cycloneiii_ff         ; 33                          ;
+;     CLR               ; 9                           ;
 ;     ENA CLR           ; 24                          ;
 ; cycloneiii_lcell_comb ; 66                          ;
 ;     arith             ; 21                          ;
 ;         3 data inputs ; 21                          ;
 ;     normal            ; 45                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 35                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 37                          ;
 ;         4 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.40                        ;
-; Average LUT depth     ; 3.50                        ;
+; Average LUT depth     ; 3.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -432,52 +447,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 15 11:41:33 2023
+    Info: Processing started: Mon Oct 16 20:18:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5_p2 -c lab5_p2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd
+    Info (12022): Found design unit 1: genericsubtractor-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 21
+    Info (12023): Found entity 1: genericsubtractor File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericregister.vhd
+    Info (12022): Found design unit 1: genericregister-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 22
+    Info (12023): Found entity 1: genericregister File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd
+    Info (12022): Found design unit 1: genericcomparator-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 20
+    Info (12023): Found entity 1: genericcomparator File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd
+    Info (12022): Found design unit 1: generic2x1mux-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 22
+    Info (12023): Found entity 1: generic2x1mux File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file gcd_tb.vhd
-    Info (12022): Found design unit 1: gcd_tb-TB File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd_tb.vhd Line: 8
-    Info (12023): Found entity 1: gcd_tb File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd_tb.vhd Line: 5
+    Info (12022): Found design unit 1: gcd_tb-TB File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd_tb.vhd Line: 11
+    Info (12023): Found entity 1: gcd_tb File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd_tb.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file gcd.vhd
-    Info (12022): Found design unit 1: gcd-FSM_D2 File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd Line: 27
-    Info (12023): Found entity 1: gcd File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd Line: 7
+    Info (12022): Found design unit 1: gcd-FSM_D2 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd Line: 27
+    Info (12023): Found entity 1: gcd File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file datapath2.vhd
-    Info (12022): Found design unit 1: datapath2-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 21
-    Info (12023): Found entity 1: datapath2 File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 6
+    Info (12022): Found design unit 1: datapath2-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 21
+    Info (12023): Found entity 1: datapath2 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ctrl2.vhd
-    Info (12022): Found design unit 1: ctrl2-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p2/ctrl2.vhd Line: 15
-    Info (12023): Found entity 1: ctrl2 File: C:/Users/steve/source/eel4712/lab5/83190817/p2/ctrl2.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/source/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd
-    Info (12022): Found design unit 1: genericsubtractor-arch File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 21
-    Info (12023): Found entity 1: genericsubtractor File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/source/eel4712/lab5/83190817/genericcomponents/genericregister.vhd
-    Info (12022): Found design unit 1: genericregister-arch File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 22
-    Info (12023): Found entity 1: genericregister File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/source/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd
-    Info (12022): Found design unit 1: genericcomparator-arch File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 20
-    Info (12023): Found entity 1: genericcomparator File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/source/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd
-    Info (12022): Found design unit 1: generic2x1mux-arch File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 22
-    Info (12023): Found entity 1: generic2x1mux File: C:/Users/steve/source/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 8
+    Info (12022): Found design unit 1: ctrl2-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 14
+    Info (12023): Found entity 1: ctrl2 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 6
 Info (12127): Elaborating entity "gcd" for the top level hierarchy
-Info (12128): Elaborating entity "ctrl2" for hierarchy "ctrl2:controller" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd Line: 63
-Info (12128): Elaborating entity "datapath2" for hierarchy "datapath2:datapath" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd Line: 69
-Info (12128): Elaborating entity "generic2x1mux" for hierarchy "datapath2:datapath|generic2x1mux:x_mux" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 75
-Info (12128): Elaborating entity "genericregister" for hierarchy "datapath2:datapath|genericregister:x_register" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 79
-Info (12128): Elaborating entity "genericsubtractor" for hierarchy "datapath2:datapath|genericsubtractor:subtractor" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 81
-Info (12128): Elaborating entity "genericcomparator" for hierarchy "datapath2:datapath|genericcomparator:comparator" File: C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd Line: 82
+Info (12128): Elaborating entity "ctrl2" for hierarchy "ctrl2:controller" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at ctrl2.vhd(102): inferring latch(es) for signal or variable "done", which holds its previous value in one or more paths through the process File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 102
+Info (10041): Inferred latch for "done" at ctrl2.vhd(102) File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 102
+Info (12128): Elaborating entity "datapath2" for hierarchy "datapath2:datapath" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd Line: 69
+Info (12128): Elaborating entity "generic2x1mux" for hierarchy "datapath2:datapath|generic2x1mux:x_mux" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 75
+Info (12128): Elaborating entity "genericregister" for hierarchy "datapath2:datapath|genericregister:x_register" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 79
+Info (12128): Elaborating entity "genericsubtractor" for hierarchy "datapath2:datapath|genericsubtractor:subtractor" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 81
+Info (12128): Elaborating entity "genericcomparator" for hierarchy "datapath2:datapath|genericcomparator:comparator" File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd Line: 82
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 104 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 74 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Sun Oct 15 11:41:44 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 76 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Mon Oct 16 20:18:52 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:10
 
 
