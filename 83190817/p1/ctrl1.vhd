@@ -1,18 +1,18 @@
 --steven miller
---117140
+--Section number: 11710
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-entity ctrl2 is
+entity ctrl1 is
 port
 (
 	x_sel, y_sel, y_en, x_en, output_en, done: out std_logic;
 	x_lt_y,x_ne_y, clk, reset, go : in std_logic
 	
 );
-end ctrl2;
+end ctrl1;
 
-architecture arch of ctrl2 is
+architecture arch of ctrl1 is
 
 type asmstatetype is (start,hold, load, compare,subyfromxputintox, subxfromyputintoy, done_state,output, buffer_state);
 signal state, nextstate: asmstatetype;

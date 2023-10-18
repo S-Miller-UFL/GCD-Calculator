@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "10/16/2023 20:12:55"
+-- DATE "10/18/2023 09:58:46"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -88,21 +88,21 @@ USE ALTERA.ALTERA_PRIMITIVES_COMPONENTS.ALL;
 USE FIFTYFIVENM.FIFTYFIVENM_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	ctrl2 IS
+ENTITY 	ctrl1 IS
     PORT (
-	x_sel : BUFFER std_logic;
-	y_sel : BUFFER std_logic;
-	y_en : BUFFER std_logic;
-	x_en : BUFFER std_logic;
-	output_en : BUFFER std_logic;
-	done : BUFFER std_logic;
+	x_sel : OUT std_logic;
+	y_sel : OUT std_logic;
+	y_en : OUT std_logic;
+	x_en : OUT std_logic;
+	output_en : OUT std_logic;
+	done : OUT std_logic;
 	x_lt_y : IN std_logic;
 	x_ne_y : IN std_logic;
 	clk : IN std_logic;
 	reset : IN std_logic;
 	go : IN std_logic
 	);
-END ctrl2;
+END ctrl1;
 
 -- Design Ports Information
 -- x_sel	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -118,7 +118,7 @@ END ctrl2;
 -- go	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF ctrl2 IS
+ARCHITECTURE structure OF ctrl1 IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';

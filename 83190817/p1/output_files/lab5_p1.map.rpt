@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5_p1
-Mon Oct 16 20:12:41 2023
+Wed Oct 18 09:58:24 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,7 +13,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |ctrl2|state
+  8. State Machine - |ctrl1|state
   9. User-Specified and Inferred Latches
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
@@ -46,10 +46,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 16 20:12:41 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 18 09:58:24 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab5_p1                                     ;
-; Top-level Entity Name              ; ctrl2                                       ;
+; Top-level Entity Name              ; ctrl1                                       ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 12                                          ;
 ;     Total combinational functions  ; 10                                          ;
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; ctrl2              ; lab5_p1            ;
+; Top-level entity name                                            ; ctrl1              ; lab5_p1            ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,25 +156,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; ctrl1.vhd                        ; yes             ; User VHDL File  ; C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; ctrl1.vhd                        ; yes             ; User VHDL File  ; C:/Users/steve/source/eel4712/lab5/83190817/p1/ctrl1.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -214,14 +215,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |ctrl2                     ; 10 (10)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |ctrl2              ; ctrl2       ; work         ;
+; |ctrl1                     ; 10 (10)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |ctrl1              ; ctrl1       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |ctrl2|state                                                                                                                                                               ;
+; State Machine - |ctrl1|state                                                                                                                                                               ;
 +-------------------------+--------------------+--------------+------------------+-------------------------+-------------------------+---------------+------------+------------+-------------+
 ; Name                    ; state.buffer_state ; state.output ; state.done_state ; state.subxfromyputintoy ; state.subyfromxputintox ; state.compare ; state.load ; state.hold ; state.start ;
 +-------------------------+--------------------+--------------+------------------+-------------------------+-------------------------+---------------+------------+------------+-------------+
@@ -268,7 +269,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |ctrl2|state               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |ctrl1|state               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -307,40 +308,37 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 16 20:12:35 2023
+    Info: Processing started: Wed Oct 18 09:58:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5_p1 -c lab5_p1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericsubtractor.vhd
-    Info (12022): Found design unit 1: genericsubtractor-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 21
-    Info (12023): Found entity 1: genericsubtractor File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericregister.vhd
-    Info (12022): Found design unit 1: genericregister-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 22
-    Info (12023): Found entity 1: genericregister File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/genericcomparator.vhd
-    Info (12022): Found design unit 1: genericcomparator-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 20
-    Info (12023): Found entity 1: genericcomparator File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/genericcomponents/generic2x1mux.vhd
-    Info (12022): Found design unit 1: generic2x1mux-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 22
-    Info (12023): Found entity 1: generic2x1mux File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd Line: 8
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file genericsubtractor.vhd
+    Info (12022): Found design unit 1: genericsubtractor-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericsubtractor.vhd Line: 21
+    Info (12023): Found entity 1: genericsubtractor File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericsubtractor.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file genericregister.vhd
+    Info (12022): Found design unit 1: genericregister-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericregister.vhd Line: 22
+    Info (12023): Found entity 1: genericregister File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericregister.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file genericcomparator.vhd
+    Info (12022): Found design unit 1: genericcomparator-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericcomparator.vhd Line: 20
+    Info (12023): Found entity 1: genericcomparator File: C:/Users/steve/source/eel4712/lab5/83190817/p1/genericcomparator.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file generic2x1mux.vhd
+    Info (12022): Found design unit 1: generic2x1mux-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/generic2x1mux.vhd Line: 22
+    Info (12023): Found entity 1: generic2x1mux File: C:/Users/steve/source/eel4712/lab5/83190817/p1/generic2x1mux.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file gcd_tb.vhd
-    Info (12022): Found design unit 1: gcd_tb-TB File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd Line: 11
-    Info (12023): Found entity 1: gcd_tb File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd_tb.vhd Line: 8
+    Info (12022): Found design unit 1: gcd_tb-TB File: C:/Users/steve/source/eel4712/lab5/83190817/p1/gcd_tb.vhd Line: 11
+    Info (12023): Found entity 1: gcd_tb File: C:/Users/steve/source/eel4712/lab5/83190817/p1/gcd_tb.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file gcd.vhd
-    Info (12022): Found design unit 1: gcd-FSM_D1 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd Line: 21
-    Info (12023): Found entity 1: gcd File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/gcd.vhd Line: 7
+    Info (12022): Found design unit 1: gcd-FSM_D1 File: C:/Users/steve/source/eel4712/lab5/83190817/p1/gcd.vhd Line: 21
+    Info (12023): Found entity 1: gcd File: C:/Users/steve/source/eel4712/lab5/83190817/p1/gcd.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file datapath1.vhd
-    Info (12022): Found design unit 1: datapath1-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd Line: 21
-    Info (12023): Found entity 1: datapath1 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/datapath1.vhd Line: 6
+    Info (12022): Found design unit 1: datapath1-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/datapath1.vhd Line: 21
+    Info (12023): Found entity 1: datapath1 File: C:/Users/steve/source/eel4712/lab5/83190817/p1/datapath1.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ctrl1.vhd
-    Info (12022): Found design unit 1: ctrl2-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd Line: 15
-    Info (12023): Found entity 1: ctrl2 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/steve/git_repos/school/eel4712/lab5/83190817/p2/ctrl2.vhd
-    Info (12022): Found design unit 1: ctrl1-arch File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 15
-    Info (12023): Found entity 1: ctrl1 File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd Line: 6
-Info (12127): Elaborating entity "ctrl2" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at ctrl1.vhd(101): inferring latch(es) for signal or variable "done", which holds its previous value in one or more paths through the process File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd Line: 101
-Info (10041): Inferred latch for "done" at ctrl1.vhd(101) File: C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p1/ctrl1.vhd Line: 101
+    Info (12022): Found design unit 1: ctrl1-arch File: C:/Users/steve/source/eel4712/lab5/83190817/p1/ctrl1.vhd Line: 15
+    Info (12023): Found entity 1: ctrl1 File: C:/Users/steve/source/eel4712/lab5/83190817/p1/ctrl1.vhd Line: 6
+Info (12127): Elaborating entity "ctrl1" for the top level hierarchy
+Warning (10631): VHDL Process Statement warning at ctrl1.vhd(101): inferring latch(es) for signal or variable "done", which holds its previous value in one or more paths through the process File: C:/Users/steve/source/eel4712/lab5/83190817/p1/ctrl1.vhd Line: 101
+Info (10041): Inferred latch for "done" at ctrl1.vhd(101) File: C:/Users/steve/source/eel4712/lab5/83190817/p1/ctrl1.vhd Line: 101
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -349,9 +347,9 @@ Info (21057): Implemented 23 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 12 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Mon Oct 16 20:12:41 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Wed Oct 18 09:58:24 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 

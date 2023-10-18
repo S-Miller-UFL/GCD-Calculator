@@ -1,5 +1,5 @@
 
-State Machine - |ctrl2|state
+State Machine - |ctrl1|state
 Name state.buffer_state state.output state.done_state state.subxfromyputintoy state.subyfromxputintox state.compare state.load state.hold state.start 
 state.start 0 0 0 0 0 0 0 0 0 
 state.hold 0 0 0 0 0 0 0 1 1 

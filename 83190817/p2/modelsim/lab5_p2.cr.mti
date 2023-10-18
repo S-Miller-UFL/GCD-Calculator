@@ -1,39 +1,4 @@
-C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/datapath2.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity datapath2
--- Compiling architecture arch of datapath2
-
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericcomparator.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity genericcomparator
--- Compiling architecture arch of genericcomparator
-
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity gcd
--- Compiling architecture FSM_D2 of gcd
-
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/ctrl2.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\steve\git_repos\school\EEL4712\lab5\83190817\p2\ctrl2.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity ctrl2
--- Compiling architecture arch of ctrl2
-
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericsubtractor.vhd
+C:/Users/steve/source/eel4712/lab5/83190817/p2/genericsubtractor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/genericsubtractor.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -43,7 +8,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity genericsubtractor
 -- Compiling architecture arch of genericsubtractor
 
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/genericregister.vhd
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/genericregister.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/genericregister.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -53,7 +18,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity genericregister
 -- Compiling architecture arch of genericregister
 
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/genericcomponents/generic2x1mux.vhd
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/generic2x1mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/generic2x1mux.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -63,7 +28,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity generic2x1mux
 -- Compiling architecture arch of generic2x1mux
 
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab5/83190817/p2/gcd_tb.vhd
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity gcd
+-- Compiling architecture FSM_D2 of gcd
+
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/gcd_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -72,5 +46,31 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity gcd_tb
 -- Compiling architecture TB of gcd_tb
 -- Loading entity gcd
+
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/ctrl2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/ctrl2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ctrl2
+-- Compiling architecture arch of ctrl2
+
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/genericcomparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/genericcomparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity genericcomparator
+-- Compiling architecture arch of genericcomparator
+
+} {} {}} C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/source/eel4712/lab5/83190817/p2/datapath2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity datapath2
+-- Compiling architecture arch of datapath2
 
 } {} {}}

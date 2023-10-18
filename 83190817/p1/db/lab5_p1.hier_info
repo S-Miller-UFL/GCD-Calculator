@@ -1,10 +1,10 @@
-|ctrl2
-x_sel << x_sel.DB_MAX_OUTPUT_PORT_TYPE
-y_sel << y_sel.DB_MAX_OUTPUT_PORT_TYPE
-y_en << y_en.DB_MAX_OUTPUT_PORT_TYPE
-x_en << x_en.DB_MAX_OUTPUT_PORT_TYPE
-output_en << output_en.DB_MAX_OUTPUT_PORT_TYPE
-done << done$latch.DB_MAX_OUTPUT_PORT_TYPE
+|ctrl1
+x_sel <= x_sel.DB_MAX_OUTPUT_PORT_TYPE
+y_sel <= y_sel.DB_MAX_OUTPUT_PORT_TYPE
+y_en <= y_en.DB_MAX_OUTPUT_PORT_TYPE
+x_en <= x_en.DB_MAX_OUTPUT_PORT_TYPE
+output_en <= output_en.DB_MAX_OUTPUT_PORT_TYPE
+done <= done$latch.DB_MAX_OUTPUT_PORT_TYPE
 x_lt_y => state.DATAB
 x_lt_y => state.DATAB
 x_ne_y => state.OUTPUTSELECT
